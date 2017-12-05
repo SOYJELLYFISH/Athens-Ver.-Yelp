@@ -1,0 +1,177 @@
+html{
+	background-image: url("https://wallpaperscraft.com/image/black_background_lines_scratches_69440_3840x2160.jpg");
+}
+h1,form{
+    text-align: center;
+}
+#topBar{
+    height: 120px;
+    width: 100%;
+    background-color: #f51600;
+    text-align: center;
+}
+#topBar p{
+   position: absolute;
+    right:47%;
+    top: 10px;
+    font-size: 30px;
+    font-family: fantasy;
+}
+#content{
+    background-color: white;
+    height: 500px;
+    margin-top: -21px;
+    overflow-y: scroll;
+   overflow-x: hidden; /* hides the horizontal scroll bar */
+}
+
+
+.button{
+ border: 0;
+background-color: #f51600;
+ box-shadow:none;
+ border-radius: 0px;
+ width: 200px;
+height: 30px;  
+cursor: pointer;
+font-family: sans-serif;
+font-size: 15px;
+border-radius: 4px;
+margin-top: 10px;
+}
+.bottom{
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+    height: 200px;
+    color: white;
+   
+}
+.button:hover{
+     background-color:rgba(0, 0, 0, 0.1);
+}
+#logo{
+      display: block;
+    margin: auto;
+    width: 10%;
+    
+}
+ul{
+    margin-left: -38px;
+    list-style-type: none;
+}
+input[type=text],input[type=password]{
+    margin-top: 10px;
+    height: 24px;
+    width: 180px;
+    background-color: ghostwhite;
+    border-radius: 2px;
+}
+input[type=text]:focus {
+    background-color: white;
+}
+#left{
+    margin-left: 400px;
+}
+#right{
+    margin-left: 150px;
+}
+.icon{
+    margin-top: 60px;
+    height: 350px;
+    width: 400px;
+}
+#logo{
+      display: block;
+    margin: auto;
+    width: 10%;
+    
+}
+#error{
+    padding-top: 20px;
+    font-size: 40px;
+}
+/* ------------------------------------------------------------------------------ */
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block; 
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.column {
+    float: left;
+    width: 24%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+@media (max-width: 300px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
